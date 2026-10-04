@@ -63,7 +63,20 @@ flowchart LR
     T8 --> T10
     T9 --> T11
     T10 --> T11
+
+    classDef critical fill:#ffcccc,stroke:#ff0000,stroke-width:3px,color:#111111;
+    class T1,T2,T4,T6,T9,T11 critical;
+
+    linkStyle 0 stroke:#ff0000,stroke-width:3px;
+    linkStyle 2 stroke:#ff0000,stroke-width:3px;
+    linkStyle 4 stroke:#ff0000,stroke-width:3px;
+    linkStyle 7 stroke:#ff0000,stroke-width:3px;
+    linkStyle 10 stroke:#ff0000,stroke-width:3px;
 ```
+
+紅色節點與連線代表本專案的關鍵路徑：
+
+**1 → 2 → 4 → 6 → 9 → 11**
 
 
 ## 四、甘特圖
